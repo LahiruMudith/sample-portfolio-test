@@ -1,0 +1,213 @@
+body{
+    overflow-x: hidden;
+}
+button{
+    cursor: pointer;
+}
+#header{
+    position: relative;
+    height: 10vh;
+    /*background-color: #aeae04;*/
+}
+#logo{
+    width: 4vw;
+    position: absolute;
+    top: 0;
+    left: 1vw;
+    bottom: 0;
+    margin: auto;
+}
+#nav-ul{
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+#nav-ul>li{
+    margin: 5px;
+}
+
+#nav-ul>li>a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#hero-section{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#menu-icon{
+    width: 10vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    display: none;
+}
+#left-side, #right-side{
+    position: relative;
+}
+#text-1{
+    width: max-content;
+    height: max-content;
+    font-size: 3vw;
+
+    position: absolute;
+    top: 0;
+    bottom: 40vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#text-2{
+    width: max-content;
+    height: max-content;
+    font-size: 5vw;
+
+    position: absolute;
+    top: 0;
+    bottom: 20vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#explore-btn{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#my-photo{
+    width: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#service-section{
+    height: 100vh;
+}
+#service-header{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#service-cards{
+    position: relative;
+    top: 10vh;
+    height: 1fr;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.service-card{
+    background-color: antiquewhite;
+    border-radius: 10%;
+    width: 24vw;
+    height: max-content;
+    margin: 0 0.5vw;
+    padding: 0 0 7vh 0;
+    position: relative;
+}
+.service-card-header{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 1vh 0;
+}
+.service-card-dsc{
+    width: 90%;
+    padding: 5vh 2vh 2vh 2vh;
+    text-align: center;
+    margin: 0;
+}
+.service-card-btn{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+
+@media all and (max-width: 600px) {
+    /*Hero Section Responsive*/
+    #logo{
+        width: 10vw;
+    }
+    #my-photo{
+        /*width: 50%;*/
+        bottom: -18vh;
+    }
+    #hero-section{
+        grid-template-columns: 1fr;
+    }
+    #text-1{
+        font-size: 8vw;
+        bottom: 20vh;
+    }
+    #text-2{
+        font-size: 8vw;
+        bottom: 0vh;
+    }
+    #explore-btn{
+        width: max-content;
+        padding: 1vw;
+        height: max-content;
+        top: 20vh;
+    }
+}
+
+@media all and (max-width: 300px){
+    /*Hero Section Responsive*/
+    #logo{
+        width: 15vw;
+         top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    #nav-ul{
+        display: none;
+    }
+    #menu-icon{
+        display: block;
+    }
+    #text-1{
+        font-size: 10vw;
+    }
+    #text-2{
+        font-size: 10vw;
+    }
+    #my-photo{
+        width: 70%;
+    }
+
+}
