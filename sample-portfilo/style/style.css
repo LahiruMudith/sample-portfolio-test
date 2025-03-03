@@ -4,6 +4,7 @@ body{
 button{
     cursor: pointer;
 }
+/*Hero Section*/
 #header{
     position: relative;
     height: 10vh;
@@ -102,8 +103,9 @@ button{
     right: 0;
     margin: auto;
 }
+/*Service Section*/
 #service-section{
-    height: 100vh;
+    height: max-content;
 }
 #service-header{
     width: max-content;
@@ -116,7 +118,6 @@ button{
 #service-cards{
     position: relative;
     top: 10vh;
-    height: 1fr;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -182,6 +183,21 @@ button{
         height: max-content;
         top: 20vh;
     }
+
+    /*ServiceSection Responsive*/
+    #service-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service-card{
+        background-color: antiquewhite;
+        border-radius: 10%;
+        width: 48vw;
+        height: max-content;
+        margin: 0 0.5vw 2vh 1vw;
+        padding: 0 0 7vh 0;
+        position: relative;
+    }
+
 }
 
 @media all and (max-width: 300px){
@@ -208,6 +224,21 @@ button{
     }
     #my-photo{
         width: 70%;
+    }
+
+    /*ServiceSection Responsive*/
+    #service-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .service-card{
+        background-color: antiquewhite;
+        border-radius: 10%;
+        width: 96vw;
+        height: max-content;
+        margin: 0 2vw 2vh 2vw;
+        padding: 0 0 7vh 0;
+        position: relative;
+
     }
 
 }
