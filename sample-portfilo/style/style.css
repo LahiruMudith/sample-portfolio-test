@@ -158,7 +158,7 @@ button{
 
 /*Service Section*/
 #awards-section{
-    height: 80vh;
+    height: 64vh;
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -187,6 +187,21 @@ button{
     top: 10vh;
     left: 0;
     right: 0;
+    margin: auto;
+}
+
+/*Footer*/
+#footer{
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+#footer-copyright{
+    width: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1vw;
     margin: auto;
 }
 
@@ -243,7 +258,7 @@ button{
     /*Awards Section Responsive*/
     #awards-section{
         width: 100%;
-        height: 100vh;
+        height: 124vh;
         grid-template-columns: 1fr;
     }
     #awards-section>div:first-child{
@@ -263,6 +278,12 @@ button{
         top: 10vh;
     }
 
+    /*Footer Responsive*/
+    /*Footer*/
+    #footer {
+        height: 15vh;
+        font-size: 12px;
+    }
 }
 
 @media all and (max-width: 300px) {
@@ -321,11 +342,16 @@ button{
     }
 
     /*Awards Section Responsive*/
+    #awards-section {
+        height: 126vh;
+    }
     #awards-section > div:nth-child(2) {
         height: 96vh;
         font-size: 14px;
     }
-
+    #awards-section>div:first-child{
+        height: 30vh;
+    }
     #awards-video {
         height: 28vh;
     }
