@@ -221,7 +221,14 @@ button{
     }
     #hero-section{
         grid-template-columns: 1fr;
-        height: 100vh;
+        grid-template-rows: 0.5fr;
+        height: 120vh;
+    }
+    #hero-section>div:first-child{
+        height: 39vh;
+    }
+    #hero-section>div:last-child{
+        height: 60vh;
     }
     #text-1{
         font-size: 8vw;
@@ -289,9 +296,14 @@ button{
 @media all and (max-width: 300px) {
     /*Hero Section Responsive*/
     #hero-section {
-        height: 100vh;
+        height: 90vh;
     }
-
+    #hero-section>div:first-child {
+        height: 25vh;
+    }
+    #hero-section>div:last-child {
+        height: 50vh;
+    }
     #logo {
         width: 15vw;
         top: 0;
